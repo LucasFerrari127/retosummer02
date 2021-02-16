@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    Schema utilizado: https://schema.org/PodcastSeries
+    Se utilizo flexbox para hacer responsive.
+    Se usaron 24 etiquetas html: html, head, meta, link, script, title, body, header, nav, a, img, p, ul, li, section, h1, h2, h3, h5, audio, i, footer, hr, span.
+
+     -->
+
+    <!-- Información -->
+    <meta name="Description" content="Reto Semanal 02" />
+    <meta
+      name="keywords"
+      content="portada, podcast, politicamente incorrecto, politicamente, incorrecto"
+    />
+    <meta name="author" content="Lucas Ferrari" />
+    <meta name="copyright" content="SummerHack 2021" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon1.jpg" type="image/png" />
+
+    <!-- Meta para facebook -->
+    <meta property="og:title" content="Podcast Politicamente Incorrecto" />
+    <meta
+      property="og:description"
+      content="Portada del Podcast de Politicamente Incorrecto"
+    />
+    <meta property="og:type" content="music.song" />
+    <meta
+      property="og:image"
+      content="https://cdn-images-1.listennotes.com/podcasts/politicamente-incorrecto-GgykNWefOjr-jKk3_ThDa5p.1400x1400.jpg"
+    />
+    <meta property="og:url" content="https://www.listennotes.com/es/podcasts/politicamente-incorrecto-polincorrecto-jKk3_ThDa5p/" />
+
+    <!-- Meta para twitter -->
+    <meta property="twitter:title" content="Podcast Politicamente Incorrecto" />
+    <meta
+      property="twitter:description"
+      content="Portada del Podcast de Politicamente Incorrecto"
+    />
+    <meta property="twitter:type" content="Portada" />
+    <!-- Este meta no me funcionaba con ./images/portada.jpg, ni con la url de mi web del reto -->
+    <meta
+      property="twitter:image"
+      content="https://cdn-images-1.listennotes.com/podcasts/politicamente-incorrecto-GgykNWefOjr-jKk3_ThDa5p.1400x1400.jpg"
+    />
+    <meta property="twitter:url" content="Lucas Ferrari" />
+    <meta property="twitter:creator" content="@notengotwitter" />
+
+    <!-- Importación css y fonts-->
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <script
+    src="https://kit.fontawesome.com/65383ea7d8.js"
+    crossorigin="anonymous"
+    ></script>
+
+    <title>Reto Semanal 02 - Portada Podcast</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navlogo">     
+        <a href="#">
+        <img
+          src="/images/portadat.png"
+          alt=""
+          class="logo"
+        />
+        </a>
+        <p>Politicamente Incorrecto</p>
+      </nav>
+    <div class="textitos">
+      <nav>
+        <ul class="textitos2">
+          <li><a href="https://www.listennotes.com/es/podcasts/politicamente-incorrecto-polincorrecto-jKk3_ThDa5p/" target="_blank"><i class="fas fa-broadcast-tower"></i> Escuchalo en ListenNotes</a></li>
+          <li><a href="https://www.facebook.com/Pincorrecto/" target="_blank"><i class="fab fa-facebook"></i> Facebook </a></li>
+          <li><a href="https://www.instagram.com/p.incorrecto3.14" target="_blank"><i class="fab fa-instagram"></i> Instagram </a></li>
+          <li><a href="https://twitter.com/poincorrecto314" target="_blank"><i class="fab fa-twitter"></i> Twitter </a></li>
+      </nav>
+    </div>
+    </header>
+
+    <section class="splash">
+      <div class="mitad">
+        <div class="prueba">
+          <div class="textoInterno">
+            <h1>Bienvenidos a Politicamente Incorrecto</h1>
+            <h2>El podcast donde se dice lo que se tiene que decir... sin vueltas.</h2>
+            <h3>Escuha nuestro último capitulo acá!</h3><br>
+            <audio src="https://d3ctxlq1ktw2nl.cloudfront.net/production/2019-11-12/38146687-44100-2-1c2304aa0cd4f.mp3" controls></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secCartas espacios">
+      <div class="espacioCartas">
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+              <span itemprop="name"><h3>Primer Capítulo</h3></span>
+              <p itemprop="description"><i class="fas fa-broadcast-tower"></i> Escucha nuestro primer capitulo, aquí, ahora, donde hablaremos sobre Bolivia Evo, España Vox y Argentina Hiper. </p>
+              <hr />
+              <audio itemprop="audio" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-10-13/33971139-44100-2-f611760566c68.m4a" controls></audio>
+              <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img
+                itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"><h3>Segundo Capítulo</h3></span>
+              <p itemprop="description"><i class="fas fa-broadcast-tower"></i> En el siguiente podcast, tendrás toda la información que necesitas saber sobre las protestas en Chile y en Hong Kong</p>
+              <hr />
+              <audio itemprop="audio" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-10-20/34891627-44100-2-dbd1ac0058889.m4a" controls></audio>
+              <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img 
+                itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"><h3>Tercer Capítulo</h3></span>
+              <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Quien es Realmente el Joker? Averigualo en nuestro siguiente capítulo!</p>
+              <hr />
+              <audio itemprop="audio" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-11-3/36393593-44100-2-267f337af69c8.m4a" controls></audio>
+              <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"><h3>Cuarto Capítulo</h3></span>
+              <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Un poco de la actualidad de tu país nunca viene mal. Qué está pasando en China?</p>
+              <hr />
+              <audio itemprop="audio" src="https://d3ctxlq1ktw2nl.cloudfront.net/production/2019-11-12/38146687-44100-2-1c2304aa0cd4f.mp3" controls></audio>
+              <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"><h3>Proximamente</h3></span>
+              <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!!  </p>
+              <hr />
+              <audio itemprop="audio" src="#" controls></audio>
+              <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"></span><h3>Proximamente</h3></span>
+            <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!!  </p>
+            <hr />
+            <audio itemprop="audio" src="#" controls></audio>
+            <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"></span><h3>Proximamente</h3></span>
+            <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!!  </p>
+            <hr />
+            <audio itemprop="audio" src="#" controls></audio>
+            <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+
+        <div itemtype="https://schema.org/PodcastSeries" class="carta">
+          <div class="foto">
+              <img itemprop="image"
+                src="/images/portadat.png"
+                alt="Politicamente Incorrecto"
+              />
+          </div>
+          <div class="content">
+            <span itemprop="name"></span><h3>Proximamente</h3></span>
+            <p itemprop="description"><i class="fas fa-broadcast-tower"></i>Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!! Proximamente!!  </p>
+            <hr />
+            <audio itemprop="audio" src="#" controls></audio>
+            <h5>Hosted By<span itemprop="author" >Fito, MM2, el Ruso</span></h5>
+          </div>
+        </div>
+      </div>
+        
+      
+    </section>
+
+    <footer>
+      <div class="fondo">
+        <p> Página Creada por Lucas Ferrari en el segundo curso del SummerHack 2021 - Todos los Izquierdos Reservados </p>
+      </div>
+    </footer>
+  </body>
+</html>
